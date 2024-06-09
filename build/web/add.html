@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>add students page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Persist student!!</h1>
+        
+        <form action="AddStudentServlet.do" method="POST" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td>Photo:</td>
+                    <td><input type="file" name="image" accept="image/*"></td>
+                </tr>
+                
+                <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name"></td>
+                </tr>
+                
+                 <tr>
+                <td>Surname:</td>
+                <td><input type="text" name="surname"></td>
+                </tr>
+                
+                 <tr>
+                <td>Student number:</td>
+                <td><input type="text" name="id"></td>
+                </tr>
+                
+                 <tr>
+                <td></td>
+                <td><input type="submit" value="ADD"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
